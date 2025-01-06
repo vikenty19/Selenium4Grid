@@ -9,6 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BaseClass {
+    protected String url ="https://the-internet.herokuapp.com/";
     public WebDriver setUpBrowser(String browserName) throws MalformedURLException {
         WebDriver driver;
         DesiredCapabilities dc = new DesiredCapabilities();

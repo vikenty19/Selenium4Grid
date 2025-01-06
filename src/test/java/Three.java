@@ -6,16 +6,16 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 
-public class One extends BaseClass {
+public class Three extends BaseClass {
     public WebDriver driver;
     @Test
-    public void testOne(){
+    public void testThree(){
         driver.get(url);
-        System.out.println(driver.getTitle() + "from Chrome");
+        System.out.println(driver.getTitle() + "from Edge");
     }
     @BeforeMethod
     public void setUp() throws MalformedURLException {
-       driver = setUpBrowser("chrome");
+        driver = setUpBrowser("edge");
 
 
     }
