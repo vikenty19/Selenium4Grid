@@ -11,7 +11,7 @@ public class One extends BaseClass {
     @Test
     public void testOne(){
         driver.get(url);
-        System.out.println(driver.getTitle() + "from Chrome");
+        System.out.println(driver.getTitle() + " from Chrome");
     }
     @BeforeMethod
     public void setUp() throws MalformedURLException {
