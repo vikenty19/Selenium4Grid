@@ -21,8 +21,11 @@ public class BaseClass {
             dc.setBrowserName("MicrosoftEdge");
         } else if (browserName.equalsIgnoreCase("opera")) {
             dc.setBrowserName("opera");
+        } else if (browserName.equalsIgnoreCase("ie")) {
+            dc.setBrowserName("internet explorer");
+
         }
- driver = new RemoteWebDriver(new URL("http://localhost:4444"),dc);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"),dc);
         return driver;
     }
 }

@@ -11,12 +11,11 @@ public class Four extends BaseClass {
     @Test
     public void testFour(){
         driver.get(url);
-        System.out.println(driver.getTitle() + "from Opera");
+        System.out.println(driver.getTitle() + "from IE");
     }
     @BeforeMethod
     public void setUp() throws MalformedURLException {
         driver = setUpBrowser("opera");
-
 
     }
     @AfterMethod
